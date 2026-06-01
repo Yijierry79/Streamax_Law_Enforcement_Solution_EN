@@ -211,6 +211,11 @@
       background: #000;
     }
 
+    .pdf-picture {
+      display: block;
+      width: 100%;
+    }
+
     @media (max-width: 780px) {
       :root {
         --sidebar: 100%;
@@ -328,6 +333,11 @@
         max-width: 100vw;
       }
 
+      .pdf-picture {
+        width: 100vw;
+        max-width: 100vw;
+      }
+
       .edge-mask::after,
       .edge-mask-left::before {
         width: 2px;
@@ -389,54 +399,87 @@
     <main class="viewer">
       <section class="panel active" id="law" aria-label="Law Enforcement Solution">
         <div class="spread-stack">
-          <img class="pdf-page" src="assets/pages/law-spread-2-3.png" alt="">
-          <img class="pdf-page" src="assets/pages/law-spread-4-5.png" alt="">
-          <img class="pdf-page" src="assets/pages/law-spread-6-7.png" alt="">
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/law-spread-2-3.jpg">
+            <img class="pdf-page" src="assets/pages/law-spread-2-3.png" alt="">
+          </picture>
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/law-spread-4-5.jpg">
+            <img class="pdf-page" src="assets/pages/law-spread-4-5.png" alt="">
+          </picture>
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/law-spread-6-7.jpg">
+            <img class="pdf-page" src="assets/pages/law-spread-6-7.png" alt="">
+          </picture>
         </div>
       </section>
 
       <section class="panel" id="lightbar" aria-label="Smart Lightbar System">
         <div class="page-stack edge-mask-left">
-          <img class="pdf-page" src="assets/pages/lightbar-moto-p1.png" alt="">
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/lightbar-moto-p1.jpg">
+            <img class="pdf-page" src="assets/pages/lightbar-moto-p1.png" alt="">
+          </picture>
         </div>
       </section>
 
       <section class="panel" id="motorcycle" aria-label="Motorcycle Enforcement Solution">
         <div class="page-stack">
-          <img class="pdf-page" src="assets/pages/lightbar-moto-p2.png" alt="">
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/lightbar-moto-p2.jpg">
+            <img class="pdf-page" src="assets/pages/lightbar-moto-p2.png" alt="">
+          </picture>
         </div>
       </section>
 
       <section class="panel" id="alpr" aria-label="Automatic License Plate Recognition">
         <div class="page-stack">
-          <img class="pdf-page" src="assets/pages/alpr-p1.png" alt="">
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/alpr-p1.jpg">
+            <img class="pdf-page" src="assets/pages/alpr-p1.png" alt="">
+          </picture>
           <span class="page-frame edge-mask-left">
-            <img class="pdf-page" src="assets/pages/alpr-p2.png" alt="">
+            <picture class="pdf-picture">
+              <source media="(max-width: 780px)" srcset="assets/mobile/alpr-p2.jpg">
+              <img class="pdf-page" src="assets/pages/alpr-p2.png" alt="">
+            </picture>
           </span>
         </div>
       </section>
 
       <section class="panel" id="bodycam-premium" aria-label="Body-Worn Camera Premium Version">
         <div class="page-stack edge-mask">
-          <img class="pdf-page" src="assets/pages/bodycam-p1.png" alt="">
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/bodycam-p1.jpg">
+            <img class="pdf-page" src="assets/pages/bodycam-p1.png" alt="">
+          </picture>
         </div>
       </section>
 
       <section class="panel" id="bodycam-long" aria-label="Body-Worn Camera Long-Endurance Version">
         <div class="page-stack edge-mask">
-          <img class="pdf-page" src="assets/pages/bodycam-p2.png" alt="">
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/bodycam-p2.jpg">
+            <img class="pdf-page" src="assets/pages/bodycam-p2.png" alt="">
+          </picture>
         </div>
       </section>
 
       <section class="panel" id="ptz" aria-label="Intelligent PTZ Camera">
         <div class="page-stack">
-          <img class="pdf-page" src="assets/pages/ptz-earbuds-p1.png" alt="">
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/ptz-earbuds-p1.jpg">
+            <img class="pdf-page" src="assets/pages/ptz-earbuds-p1.png" alt="">
+          </picture>
         </div>
       </section>
 
       <section class="panel" id="earbuds" aria-label="Smart Recording Earbuds">
         <div class="page-stack edge-mask">
-          <img class="pdf-page" src="assets/pages/ptz-earbuds-p2.png" alt="">
+          <picture class="pdf-picture">
+            <source media="(max-width: 780px)" srcset="assets/mobile/ptz-earbuds-p2.jpg">
+            <img class="pdf-page" src="assets/pages/ptz-earbuds-p2.png" alt="">
+          </picture>
         </div>
       </section>
     </main>
